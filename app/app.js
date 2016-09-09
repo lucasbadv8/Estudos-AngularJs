@@ -23,7 +23,7 @@ angular.module('app', [])
                 });
         };
 		
-		git.buscarusuario = function(username){
+		git.getuser = function(username){
 			$http.get("https://api.github.com/users/" + username)
 			.success(function (data) {
                 $scope.userData = data;
